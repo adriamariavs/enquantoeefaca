@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	    <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+function enquanto() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente == true) {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Adria") {
+            if (senha == "2403") {
+                window.alert("senha e usuario Ok");
+                recorrente = false;
+            }
+        }
+    }
+}
+function faça() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Adria") {
+            if (senha == "2403") {
+                window.alert("senha e usuario Ok");
+                recorrente = false;
+            }
+        }
+    } while (recorrente == true);
+}
+</script>
+<body>
+     <button onclick="enquanto()">Entre Enquanto</button>
+	 <button onclick="faça()">Entre Faça</button>
+</body>
+</html>
